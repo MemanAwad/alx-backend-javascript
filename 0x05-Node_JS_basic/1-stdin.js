@@ -1,6 +1,6 @@
 /* simple program read from stdin */
 
-console.log('Welcome to Holberton School, what is your name?');
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('readable', () => {
   const chunk = process.stdin.read();
