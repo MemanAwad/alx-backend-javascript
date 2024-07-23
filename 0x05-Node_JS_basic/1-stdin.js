@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 });
 
 // Displaying the initial message
-console.log('Welcome to Holberton School, what is your name?');
+console.log('Welcome to Holberton School, what is your name?\n');
 
 // Waiting for the user input
 rl.question('', (name) => {
@@ -21,6 +21,6 @@ rl.question('', (name) => {
 
 // Listening for the close event to display the closing message
 rl.on('close', () => {
-  console.log('This important software is now closing');
+  console.log('This important software is now closing\n');
   process.exit(0);
 });
